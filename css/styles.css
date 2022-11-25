@@ -1,0 +1,694 @@
+/* основний колір тексту color: #212121 */
+/* вторинний колір тексту color: #757575; */
+/* акцент при ховері color: #2196F3 */
+/* вторинний колір фону #F5F4FA */
+:root {
+  --title-text-color: #212121;
+  --brand-text-color: #757575;
+  --accent: #2196f3;
+  --backgroudn-color: #ffffff;
+  --main-icon-color: #afb1b8;
+}
+
+.body {
+  background-color: var(--backgroudn-color);
+  color: var(--title-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------шапка------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.style {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border-bottom: 1px solid #ececec;
+}
+
+.link-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.link-logo .logo-studio {
+  color: #212121;
+}
+
+.site-nav .link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+.site-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.current-studio::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.current-portfolio::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.auth-nav .contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--brand-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav .contact:hover,
+.auth-nav .contact:focus {
+  color: var(--accent);
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.auth-icon {
+  display: flex;
+  align-items: center;
+}
+
+.auth-icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* -----------------герой------------------- */
+.hero {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team.jpg);
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px 32px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px #2196f3;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ------------------секції------------------*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section .section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.section .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.section .text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--brand-text-color);
+}
+
+/* ---------------пропозиції---------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.offer {
+  display: flex;
+  gap: 30px;
+}
+
+.offer li {
+  flex-basis: 270px;
+}
+
+.title-offer {
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.text-offer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--brand-text-color);
+}
+
+.offer-svg {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.offer-svg-icon {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+/* ---------------приміри робіт------------  */
+
+.section-work-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.section-padding {
+  padding-top: 0;
+  padding-bottom: 94;
+}
+
+.product-work {
+  position: relative;
+}
+
+.product-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* ---------------команда------------------  */
+
+.our-team-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.title-text {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.title-text .title {
+  margin-bottom: 10px;
+}
+
+.team-padding {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+}
+
+.team-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-icon-svg {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--main-icon-color);
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon-svg:hover,
+.team-icon-svg:focus {
+  background-color: var(--accent);
+  fill: #ffffff;
+}
+
+/* ---------------фільрт кнопок------------  */
+.nav-filtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+/* --------------портфоліо------------------ */
+.item .text {
+  color: var(--brand-text-color);
+}
+
+.portfoloi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav .button-filtr {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: transparent;
+  background-color: #f5f4fa;
+  color: #212121;
+
+  padding: 6px 22px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav .button-filtr:hover,
+.nav .button-filtr:focus {
+  background-color: var(--accent);
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio .portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+
+  margin-bottom: 4px;
+}
+
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--brand-text-color);
+}
+
+.portfolio-item {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.portfolio-hover {
+  display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-hover:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-text {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  height: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay:hover .portfolio-text {
+  transform: translateY(0);
+}
+
+/* ------------ ПОСТІЙНІ КЛІЄНТИ ------------ */
+.clients-item {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients-icon {
+  display: flex;
+}
+
+.clients-icon-svg {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-icon-color);
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon-svg:hover,
+.clients-icon-svg:focus {
+  border-color: var(--accent);
+  fill: var(--accent);
+}
+
+/* ----------------підвал------------------ */
+
+.container-logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container-address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address-item {
+  margin-bottom: 9px;
+}
+
+.address-link .link:hover,
+.address-link .link:focus {
+  color: var(--accent);
+}
+
+.background {
+  background-color: #2f303a;
+}
+.background .logo-studio-two {
+  color: #ffffff;
+}
+
+.background .link-address {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.background .link-contact {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --------------ПРИЄДНУЙТЕСЬ-------------- */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-address {
+  margin-left: 70px;
+}
+
+.footer-items {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-svg {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-svg:hover,
+.footer-icon-svg:focus {
+  background-color: var(--accent);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+.modal-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

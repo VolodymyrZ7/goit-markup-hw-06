@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="body">
+    <!-- шапка -->
+    <header class="border">
+      <div class="container container-header">
+        <a href="/" class="link-logo link"
+          >Web<span class="logo-studio">Studio</span></a
+        >
+
+        <nav>
+          <ul class="site-nav style">
+            <li><a href="./index.html" class="link">Студія</a></li>
+            <li><a class="link current current-portfolio">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="auth-nav style">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact link auth-icon"
+              ><svg class="auth-icon-mail" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact link auth-icon"
+              ><svg class="auth-icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- портфоліо -->
+      <section class="portfolio section">
+        <div class="container">
+          <ul class="nav style nav-filtr">
+            <li>
+              <button type="button" class="button-filtr">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="button-filtr">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="button-filtr">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="button-filtr">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button-filtr">Маркетинг</button>
+            </li>
+          </ul>
+
+          <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
+          <ul class="item style portfoloi-container">
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/pople_on_the_screen.jpg"
+                    alt="команда"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/men's_with_ball.jpg"
+                    alt="чоловіки грають в
+              баскетбол"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="додаток"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/headphone.jpg"
+                    alt="навушники"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/boxes.jpg"
+                    alt="коробки"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Проєкт Boxes</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/monitor.jpg"
+                    alt="монітор"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/journal.jpg"
+                    alt="журнал"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Видання Limited Edition</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/tag.jpg"
+                    alt="бірка"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Проєкт LAB</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="overlay">
+              <a href="#" class="link portfolio-hover">
+                <div class="portfolio-overlay">
+                  <img
+                    src="./images/laptop.jpg"
+                    alt="ноутбук"
+                    width="370"
+                    height="294"
+                    class="img"
+                  />
+                  <p class="portfolio-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!----------------- підвал --------------------->
+    <footer class="background container-address">
+      <div class="container footer-container">
+        <div>
+          <a href="/" class="link-logo link container-logo"
+            >Web<span class="logo-studio-two">Studio</span></a
+          >
+
+          <address class="address">
+            <ul class="address-link style">
+              <li class="address-item">
+                <a href="" class="link-address link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="imalto:info@devstudio.com" class="link-contact link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link-contact link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-address">
+          <p class="footer-text">приєднуйтесь</p>
+          <ul class="footer-items">
+            <li class="footer-icon">
+              <a href="#" class="footer-icon-svg">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#" class="footer-icon-svg">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#" class="footer-icon-svg">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a href="#" class="footer-icon-svg">
+                <svg class="color-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
