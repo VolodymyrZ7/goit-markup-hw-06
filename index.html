@@ -495,7 +495,7 @@
               </svg>
             </span>
           </label>
-          <label for="tel" class="label-name">
+          <label for="tel">
             <span class="label-name">Телефон</span>
             <span class="wrapper">
               <input type="tel" name="tel" id="tel" class="modal-item" />
@@ -504,7 +504,7 @@
               </svg>
             </span>
           </label>
-          <label for="mail" class="label-name">
+          <label for="mail">
             <span class="label-name">Пошта</span>
             <span class="wrapper">
               <input type="email" name="mail" id="mail" class="modal-item" />
@@ -513,7 +513,7 @@
               </svg>
             </span>
           </label>
-          <label for="feedback" class="label-name">
+          <label for="feedback">
             <span class="label-name">Коментар</span>
             <textarea
               name="feedback"
@@ -535,12 +535,16 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span class="mailing-text"
-                >Погоджуюся з розсилкою та приймаю</span
-              >
-              <span
-                ><a href="#" class="mailing-contract">Умови договору</a></span
-              >
+              <div class="wrapper-text">
+                <span class="mailing-text"
+                  >Погоджуюся з розсилкою та приймаю</span
+                >
+                <span
+                  ><a href="#" class="mailing-contract">
+                    Умови договору</a
+                  ></span
+                >
+              </div>
             </label>
           </div>
           <button type="submit" class="modal-send">Відправити</button>
